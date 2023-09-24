@@ -1,2 +1,2 @@
 #!/bin/bash
-cp *.html ./"$(dirname "$PWD")"
+find . -name "*.html" -exec cp --parents \{} /path/to/destination/ \
